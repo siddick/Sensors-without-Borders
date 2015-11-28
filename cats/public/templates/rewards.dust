@@ -1,0 +1,30 @@
+{>"layouts/master" /}
+
+{<body}
+<div class="row">
+    <div class="col-sm-2">
+        <img src="http://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?size=120" class="img-responsive center-block">
+        <h4 class="text-center">John, Mickle</h4>
+    </div>
+    <div class="col-sm-8">
+        <h3>Your Karma Points: 5000</h3>
+    </div>
+</div>
+<div class = "row">
+    <div class="panel panel-default">
+      <div class="panel-heading">Reward title</div>
+      <div class="panel-body">Reward description
+      <button type="button" class="btn btn-primary redeem-button pull-right">Redeem</button>
+      </div>
+
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">Reward title</div>
+      <div class="panel-body">Reward description</div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">Reward title</div>
+      <div class="panel-body">Reward description</div>
+    </div>
+</div>
+{/body}

@@ -16,4 +16,12 @@ module.exports = function (router) {
 
     });
 
+    router.get('/rewards', passport.authenticate('basic'), function (req, res) {
+
+        res.render('rewards', model);
+
+    });
+
+
+
 };
