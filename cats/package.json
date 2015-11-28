@@ -35,6 +35,7 @@
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-less": "^1.1.0",
     "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-contrib-watch": "^0.6.1",
     "grunt-copy-to": "0.0.10",
     "grunt-dustjs": "^1.2.1",
     "grunt-makara-amdify": "^1.0.1",
