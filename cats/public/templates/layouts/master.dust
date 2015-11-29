@@ -19,7 +19,7 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Dashboard</a></li>
+						<li>Dashboard</li>
 					</ul>
 				</div>
 			</div>
@@ -28,5 +28,7 @@
             {+body /}
         </div>
         <script data-main="/js/app" src="/components/requirejs/require.js"></script>
+	<script type="text/javascript" src="/js/charts/jsapi.js"></script>
+	<script type="text/javascript" src="/js/charts/chart.js"></script>
     </body>
 </html>

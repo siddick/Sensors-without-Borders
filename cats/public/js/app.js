@@ -7,7 +7,7 @@ requirejs.config({
         bootstrap: '../components/bootstrap/dist/js/bootstrap',
         datatables: "../components/datatables/media/js/jquery.dataTables.min",
         tableTools: "../components/datatables-tabletools/js/dataTables.tableTools",
-        dataTablesBootstrap: "../components/Plugins/integration/bootstrap/3/dataTables.bootstrap.min",
+        dataTablesBootstrap: "../components/Plugins/integration/bootstrap/3/dataTables.bootstrap.min"
     },
     shim: {
         bootstrap: ['jquery'],
