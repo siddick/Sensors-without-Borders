@@ -13,10 +13,12 @@
                 <div id="yetToEarnOverAll" class="col-sm-6 text-center">{?karmaPending}{karmaPending}{:else}0{/karmaPending}</div>
                 <div id="earnOverAll" class="col-sm-6 text-center"><b>Earned</b></div>
                 <div id="yetToEarnOverAll" class="col-sm-6 text-center"><b>Pending</b></div>
-                <div id="karmaInstallEarn" class="col-sm-6  hidden text-center">{?karmaInstallEarn}{karmaInstallEarn}{:else}0{/karmaInstallEarn}</div>
-                <div id="karmaInstallationPending" class="col-sm-6  hidden text-center">{?karmaInstallationPending}{karmaInstallationPending}{:else}0{/karmaInstallationPending}</div>
-                <div id="karmaMaintenanceEarn" class="col-sm-6  hidden text-center">{?karmaMaintenanceEarn}{karmaMaintenanceEarn}{:else}0{/karmaMaintenanceEarn}</div>
-                <div id="karmaMaintenancePending" class="col-sm-6  hidden text-center">{?karmaMaintenancePending}{karmaMaintenancePending}{:else}0{/karmaMaintenancePending}</div>
+                <div class="col-sm-12 text-center"><b>Implementation</b></div>
+                <div id="karmaInstallEarn" class="col-sm-6  text-center">{?karmaInstallEarn}{karmaInstallEarn}{:else}0{/karmaInstallEarn}</div>
+                <div id="karmaInstallationPending" class="col-sm-6  text-center">{?karmaInstallationPending}{karmaInstallationPending}{:else}0{/karmaInstallationPending}</div>
+                <div class="col-sm-12 text-center"><b>Maintenance</b></div>
+                <div id="karmaMaintenanceEarn" class="col-sm-6  text-center">{?karmaMaintenanceEarn}{karmaMaintenanceEarn}{:else}0{/karmaMaintenanceEarn}</div>
+                <div id="karmaMaintenancePending" class="col-sm-6  text-center">{?karmaMaintenancePending}{karmaMaintenancePending}{:else}0{/karmaMaintenancePending}</div>
             </div>
 	    <div id="chart_div"></div>
         </div>
