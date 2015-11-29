@@ -16,6 +16,8 @@ var request = require('request'),
 function buildActivity(data, callback) {
     return new db.Activity({
         instanceID: data.meta.instanceID,
+        formID: data.id,
+        photo: data.SD_Photo,
         username: data.meta.username,
         sensorDeviceId: (data.SensorDevice_Id || data.SD_Identification),
         completedOn: (data.current_date || data.Current_Date),
@@ -35,10 +37,21 @@ function getCommCareForms(callback) {
 
 function saveForms(callback) {
     getCommCareForms(function (err, list) {
-        async.each(_.map(list, buildActivity), db.save, callback);
+        async.each(_.map(list, buildActivity), function (activity, next) {
+            activity.save(function (e) {
+                console.log(activity.id, e ? e.message : 'Downloaded..');
+                next();
+            });
+        }, callback);
     });
 }
 
 module.exports.saveForms = saveForms;
 module.exports.buildActivity = buildActivity;
 module.exports.getCommCareForms = getCommCareForms;
+
+if(require.main === module) {
+    saveForms(function () {
+        process.exit(0);
+    });
+}
