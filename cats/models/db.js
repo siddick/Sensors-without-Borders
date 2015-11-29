@@ -15,8 +15,15 @@ var Activity = mongoose.model('Activity', {
 	details: Object
 });
 
+var Rewards = mongoose.model('Rewards', {
+  title: String,
+  description: String,
+  Reward: Number
+});
+
 module.exports.save = function (obj, callback) {
     obj.save(callback);
 };
 
 module.exports.Activity = Activity;
+module.exports.Rewards = Rewards;
