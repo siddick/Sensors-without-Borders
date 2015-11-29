@@ -9,6 +9,19 @@ function drawAnnotations() {
 	var karmaMaintenanceEarn = parseInt($("#karmaMaintenanceEarn").html());
 	var karmaMaintenancePending = parseInt($("#karmaMaintenancePending").html());
 
+	if (earnOverAll >= 10000) {
+		$("#badge").attr("src", "../badges/ninja.jpg");
+	} else if (earnOverAll >= 5000) {
+		$("#badge").attr("src", "../badges/prodigy.jpg");
+	} else if (earnOverAll >= 2000) {
+		$("#badge").attr("src", "../badges/space_jammer.jpg");
+	} else if (earnOverAll >= 1000) {
+		$("#badge").attr("src", "../badges/book_worm.jpg");
+	} else {
+		$("#badge").attr("src", "../badges/couch_potato.jpg");
+	}
+
+
 	var data = google.visualization.arrayToDataTable([
 		['Device', 'Earned', 'Pending'],
 		['Installation', karmaInstallEarn, karmaInstallationPending],
@@ -17,7 +30,7 @@ function drawAnnotations() {
 		]);
 
 	var options = {
-title: 'Karma Points',
+title: '',
 chartArea: {width: '50%'},
 annotations: {
 alwaysOutside: true,

@@ -3,10 +3,12 @@
 {<body}
     <div class="row">
         <div class="col-sm-4">
-            <img src="http://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?size=120" class="img-responsive center-block">
-            <h4 class="text-center">John, Mickle</h4>
+		<img src="http://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?size=120" class="img-responsive center-block">
+		<h4 class="text-center">John, Mickle</h4>
+		<img class="img-responsive center-block" id="badge" src="" height="125" width="125"/>
             <hr>
             <div class="row">
+                <h4 class="text-center"><b>Karma Points</b></h4>
                 <div id="earnOverAll" class="col-sm-6 text-center">{?karmaEarn}{karmaEarn}{:else}0{/karmaEarn}</div>
                 <div id="yetToEarnOverAll" class="col-sm-6 text-center">{?karmaPending}{karmaPending}{:else}0{/karmaPending}</div>
                 <div id="earnOverAll" class="col-sm-6 text-center"><b>Earned</b></div>
