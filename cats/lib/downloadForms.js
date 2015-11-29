@@ -13,12 +13,14 @@ var request = require('request'),
         json: true
     };
 
-function buildActivity(data, callback) {
+function buildActivity(data) {
+    var meta = (data && data.meta) || {};
+
     return new db.Activity({
-        instanceID: data.meta.instanceID,
         formID: data.id,
         photo: data.SD_Photo,
-        username: data.meta.username,
+        instanceID: meta.instanceID,
+        username: meta.username,
         sensorDeviceId: (data.SensorDevice_Id || data.SD_Identification),
         completedOn: (data.current_date || data.Current_Date),
         location: (data.GPS_Location || data.SD_Location),
