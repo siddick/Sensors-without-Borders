@@ -19,6 +19,7 @@
                         <td>{description}</td>
                         <td>{?karma}{karma}{:else}50{/karma}</td>
                         <td>{completedOn}</td>
+                        <td><a href="https://www.commcarehq.org/a/swb-opphack/reports/form_data/" + {formID} +"/download-attachment/?attachment="+ photo>photo</a></td>
                         <td><a href="/admin/activities/{_id}/approve">Approve</a></td>
                     </tr>
                     {/activities}

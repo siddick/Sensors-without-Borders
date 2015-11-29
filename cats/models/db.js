@@ -6,6 +6,8 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/cats');
 var Activity = mongoose.model('Activity', {
     instanceID: { type: String, index: { unique: true } },
 	username: String,
+  formID: String,
+  photo: String,
 	sensorDeviceId: String,
 	description: String,
 	completedOn: String,
